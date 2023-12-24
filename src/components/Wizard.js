@@ -425,7 +425,7 @@ class Wizard extends Component {
                             className="col-sm-3 col-form-label col-form-label-sm"
                           >
                             Name of the User Agency/Department
-                          </label>
+                            </label>
                           <div className="col-sm-9">
                             <input
                               type="text"
@@ -656,7 +656,8 @@ class Wizard extends Component {
                             <input
                               type="text"
                               className="form-control form-control-sm"
-                              id="colFormLabelSm"
+                              name="prop_Area"
+                              onChange={(e) => this.onchangeHandler(e)}
                             />
                           </div>
                         </div>
@@ -690,7 +691,8 @@ class Wizard extends Component {
                                 <input
                                   type="text"
                                   className="form-control form-control-sm "
-                                  id="colFormLabelSm"
+                                  name=" prop_reserved"
+                                  onChange={(e) => this.onchangeHandler(e)}
                                   placeholder="Numeric with four decimal"
                                 />
                               </div>
@@ -708,7 +710,8 @@ class Wizard extends Component {
                                 <input
                                   type="text"
                                   className="form-control form-control-sm "
-                                  id="colFormLabelSm"
+                                  name="prop_protected"
+                                  onChange={(e) => this.onchangeHandler(e)}
                                   placeholder="Numeric with four decimal"
                                 />
                               </div>
@@ -728,7 +731,8 @@ class Wizard extends Component {
                                 <input
                                   type="text"
                                   className="form-control form-control-sm "
-                                  id="colFormLabelSm"
+                                  name="prop_VP"
+                                  onChange={(e) => this.onchangeHandler(e)}
                                   placeholder="Numeric with four decimal"
                                 />
                               </div>
@@ -746,7 +750,8 @@ class Wizard extends Component {
                                 <input
                                   type="text"
                                   className="form-control form-control-sm "
-                                  id="colFormLabelSm"
+                                  name="prop_civil"
+                                  onChange={(e) => this.onchangeHandler(e)}
                                   placeholder="Numeric with four decimal"
                                 />
                               </div>
@@ -766,7 +771,8 @@ class Wizard extends Component {
                                 <input
                                   type="text"
                                   className="form-control form-control-sm "
-                                  id="colFormLabelSm"
+                                  name="prop_NAP"
+                                  onChange={(e) => this.onchangeHandler(e)}
                                   placeholder="Numeric with four decimal"
                                 />
                               </div>
@@ -784,7 +790,8 @@ class Wizard extends Component {
                                 <input
                                   type="text"
                                   className="form-control form-control-sm "
-                                  id="colFormLabelSm"
+                                  name="prop_others"
+                                  onChange={(e) => this.onchangeHandler(e)}
                                   placeholder="Numeric with four decimal"
                                 />
                               </div>
@@ -804,7 +811,8 @@ class Wizard extends Component {
                                 <input
                                   type="text"
                                   className="form-control form-control-sm "
-                                  id="colFormLabelSm"
+                                  name="prop_tree_cut"
+                                  onChange={(e) => this.onchangeHandler(e)}
                                   placeholder="Numeric with two decimal"
                                 />
                               </div>
@@ -840,7 +848,8 @@ class Wizard extends Component {
                                 <input
                                   type="text"
                                   className="form-control form-control-sm "
-                                  id="colFormLabelSm"
+                                  name="act_tree_cut"
+                                  onChange={(e) => this.onchangeHandler(e)}
                                   placeholder="Numeric with two decimal"
                                 />
                               </div>
