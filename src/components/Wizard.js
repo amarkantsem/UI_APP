@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-
+import { WithTranslation, withTranslation } from "react-i18next";
 class Wizard extends Component {
   constructor() {
     super();
@@ -135,6 +135,7 @@ class Wizard extends Component {
     console.log(e.target.value);
   };
   render() {
+    const {t}=this.props;
     console.log(this.state);
     return (
       <React.Fragment>
@@ -160,7 +161,7 @@ class Wizard extends Component {
                             htmlFor="colFormLabelSm"
                             className="col-sm-3 col-form-label col-form-label-sm"
                           >
-                            Project Name*
+                            {t('project_name')}*
                             <span className="glyphicon glyphicon-envelope"></span>
                           </label>
                           <div className="col-sm-9">
@@ -3114,4 +3115,5 @@ class Wizard extends Component {
   }
 }
 
-export default Wizard;
+//export default Wizard;
+export default withTranslation()(Wizard)
