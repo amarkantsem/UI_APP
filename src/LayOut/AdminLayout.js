@@ -8,7 +8,7 @@ function AdminLayout() {
     return (
         <React.Fragment>
           <Header></Header>
-          <SideNav></SideNav>
+          {/* <SideNav></SideNav> */}
             <div>
             <Outlet /> 
                 {/* {login ? <Outlet /> : <Navigate to="/"></Navigate>} */}
